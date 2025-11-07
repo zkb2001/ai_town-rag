@@ -1,0 +1,4035 @@
+{
+  "stride": 10,
+  "time": "20250926-03:00",
+  "maze": {
+    "path": "assets\\village\\maze.json"
+  },
+  "agent_base": {
+    "percept": {
+      "mode": "box",
+      "vision_r": 8,
+      "att_bandwidth": 8
+    },
+    "schedule": {
+      "max_try": 5,
+      "diversity": 5
+    },
+    "think": {
+      "llm": {
+        "provider": "ollama",
+        "model": "qwen3:4b-q4_K_M",
+        "base_url": "http://127.0.0.1:11434/v1",
+        "api_key": ""
+      },
+      "interval": 1000,
+      "poignancy_max": 150
+    },
+    "chat_iter": 4,
+    "associate": {
+      "embedding": {
+        "provider": "ollama",
+        "model": "bge-m3:latest",
+        "base_url": "http://127.0.0.1:11434",
+        "api_key": ""
+      },
+      "retention": 8
+    }
+  },
+  "agents": {
+    "阿伊莎": {
+      "config_path": "assets\\village\\agents\\阿伊莎\\agent.json",
+      "status": {
+        "poignancy": 26
+      },
+      "schedule": {
+        "create": "20250926-00:00:00",
+        "daily_schedule": [
+          {
+            "idx": 0,
+            "describe": "睡觉",
+            "start": 0,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "准备入睡",
+                "start": 0,
+                "duration": 15
+              },
+              {
+                "idx": 1,
+                "describe": "放松身体",
+                "start": 15,
+                "duration": 15
+              },
+              {
+                "idx": 2,
+                "describe": "睡前冥想",
+                "start": 30,
+                "duration": 15
+              },
+              {
+                "idx": 3,
+                "describe": "检查手机消息",
+                "start": 45,
+                "duration": 15
+              }
+            ]
+          },
+          {
+            "idx": 1,
+            "describe": "睡觉",
+            "start": 60,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "睡觉",
+                "start": 60,
+                "duration": 5
+              },
+              {
+                "idx": 1,
+                "describe": "睡觉",
+                "start": 65,
+                "duration": 5
+              },
+              {
+                "idx": 2,
+                "describe": "睡觉",
+                "start": 70,
+                "duration": 5
+              },
+              {
+                "idx": 3,
+                "describe": "睡觉",
+                "start": 75,
+                "duration": 5
+              },
+              {
+                "idx": 4,
+                "describe": "睡觉",
+                "start": 80,
+                "duration": 5
+              },
+              {
+                "idx": 5,
+                "describe": "睡觉",
+                "start": 85,
+                "duration": 5
+              },
+              {
+                "idx": 6,
+                "describe": "睡觉",
+                "start": 90,
+                "duration": 5
+              },
+              {
+                "idx": 7,
+                "describe": "睡觉",
+                "start": 95,
+                "duration": 5
+              },
+              {
+                "idx": 8,
+                "describe": "睡觉",
+                "start": 100,
+                "duration": 5
+              },
+              {
+                "idx": 9,
+                "describe": "睡觉",
+                "start": 105,
+                "duration": 5
+              },
+              {
+                "idx": 10,
+                "describe": "睡觉",
+                "start": 110,
+                "duration": 10
+              }
+            ]
+          },
+          {
+            "idx": 2,
+            "describe": "睡觉",
+            "start": 120,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "睡觉",
+                "start": 120,
+                "duration": 5
+              },
+              {
+                "idx": 1,
+                "describe": "睡觉",
+                "start": 125,
+                "duration": 5
+              },
+              {
+                "idx": 2,
+                "describe": "睡觉",
+                "start": 130,
+                "duration": 5
+              },
+              {
+                "idx": 3,
+                "describe": "睡觉",
+                "start": 135,
+                "duration": 5
+              },
+              {
+                "idx": 4,
+                "describe": "睡觉",
+                "start": 140,
+                "duration": 5
+              },
+              {
+                "idx": 5,
+                "describe": "睡觉",
+                "start": 145,
+                "duration": 5
+              },
+              {
+                "idx": 6,
+                "describe": "睡觉",
+                "start": 150,
+                "duration": 5
+              },
+              {
+                "idx": 7,
+                "describe": "睡觉",
+                "start": 155,
+                "duration": 5
+              },
+              {
+                "idx": 8,
+                "describe": "睡觉",
+                "start": 160,
+                "duration": 5
+              },
+              {
+                "idx": 9,
+                "describe": "睡觉",
+                "start": 165,
+                "duration": 5
+              },
+              {
+                "idx": 10,
+                "describe": "睡觉",
+                "start": 170,
+                "duration": 10
+              }
+            ]
+          },
+          {
+            "idx": 3,
+            "describe": "睡觉",
+            "start": 180,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "睡觉",
+                "start": 180,
+                "duration": 5
+              },
+              {
+                "idx": 1,
+                "describe": "睡觉",
+                "start": 185,
+                "duration": 5
+              },
+              {
+                "idx": 2,
+                "describe": "睡觉",
+                "start": 190,
+                "duration": 5
+              },
+              {
+                "idx": 3,
+                "describe": "睡觉",
+                "start": 195,
+                "duration": 5
+              },
+              {
+                "idx": 4,
+                "describe": "睡觉",
+                "start": 200,
+                "duration": 5
+              },
+              {
+                "idx": 5,
+                "describe": "睡觉",
+                "start": 205,
+                "duration": 5
+              },
+              {
+                "idx": 6,
+                "describe": "睡觉",
+                "start": 210,
+                "duration": 5
+              },
+              {
+                "idx": 7,
+                "describe": "睡觉",
+                "start": 215,
+                "duration": 5
+              },
+              {
+                "idx": 8,
+                "describe": "睡觉",
+                "start": 220,
+                "duration": 5
+              },
+              {
+                "idx": 9,
+                "describe": "睡觉",
+                "start": 225,
+                "duration": 5
+              },
+              {
+                "idx": 10,
+                "describe": "睡觉",
+                "start": 230,
+                "duration": 10
+              }
+            ]
+          },
+          {
+            "idx": 4,
+            "describe": "睡觉",
+            "start": 240,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 5,
+            "describe": "睡觉",
+            "start": 300,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 6,
+            "describe": "起床",
+            "start": 360,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 7,
+            "describe": "吃早餐",
+            "start": 420,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 8,
+            "describe": "去奥克山学院图书馆上课",
+            "start": 480,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 9,
+            "describe": "到达图书馆开始学习",
+            "start": 540,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 10,
+            "describe": "继续在图书馆学习",
+            "start": 600,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 11,
+            "describe": "午餐",
+            "start": 660,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 12,
+            "describe": "午休",
+            "start": 720,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 13,
+            "describe": "继续在图书馆学习",
+            "start": 780,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 14,
+            "describe": "下课",
+            "start": 840,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 15,
+            "describe": "去吃晚饭",
+            "start": 900,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 16,
+            "describe": "吃晚饭",
+            "start": 960,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 17,
+            "describe": "去图书馆继续研究莎士比亚戏剧的语言运用",
+            "start": 1020,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "总结语言特征与阶级表达之间的关系，分析语言差异如何反映社会结构。",
+                "start": 1050,
+                "duration": 10
+              },
+              {
+                "idx": 1,
+                "describe": "回顾并整理之前讨论的关键点，准备下一步研究方向。",
+                "start": 1060,
+                "duration": 10
+              },
+              {
+                "idx": 2,
+                "describe": "撰写总结性笔记，归纳语言、阶级与社会结构之间的联系。",
+                "start": 1070,
+                "duration": 10
+              }
+            ]
+          },
+          {
+            "idx": 18,
+            "describe": "在图书馆学习写作知识",
+            "start": 1080,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "查阅莎士比亚戏剧的语言运用资料",
+                "start": 1080,
+                "duration": 15
+              },
+              {
+                "idx": 1,
+                "describe": "记录重要的语言运用例子",
+                "start": 1095,
+                "duration": 10
+              },
+              {
+                "idx": 2,
+                "describe": "整理研究笔记",
+                "start": 1105,
+                "duration": 15
+              },
+              {
+                "idx": 3,
+                "describe": "为写作知识做笔记",
+                "start": 1120,
+                "duration": 10
+              },
+              {
+                "idx": 4,
+                "describe": "复习之前的研究内容",
+                "start": 1130,
+                "duration": 5
+              },
+              {
+                "idx": 5,
+                "describe": "确认下一步研究方向",
+                "start": 1135,
+                "duration": 5
+              }
+            ]
+          },
+          {
+            "idx": 19,
+            "describe": "下课",
+            "start": 1140,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "离开教室",
+                "start": 1140,
+                "duration": 5
+              },
+              {
+                "idx": 1,
+                "describe": "检查手机消息",
+                "start": 1145,
+                "duration": 5
+              },
+              {
+                "idx": 2,
+                "describe": "整理书包",
+                "start": 1150,
+                "duration": 5
+              },
+              {
+                "idx": 3,
+                "describe": "确认宿舍门禁卡",
+                "start": 1155,
+                "duration": 5
+              },
+              {
+                "idx": 4,
+                "describe": "检查是否带齐物品",
+                "start": 1160,
+                "duration": 5
+              },
+              {
+                "idx": 5,
+                "describe": "走向宿舍方向",
+                "start": 1165,
+                "duration": 5
+              },
+              {
+                "idx": 6,
+                "describe": "确认宿舍楼位置",
+                "start": 1170,
+                "duration": 5
+              },
+              {
+                "idx": 7,
+                "describe": "走进宿舍楼",
+                "start": 1175,
+                "duration": 5
+              },
+              {
+                "idx": 8,
+                "describe": "进入宿舍房间",
+                "start": 1180,
+                "duration": 5
+              },
+              {
+                "idx": 9,
+                "describe": "检查宿舍环境",
+                "start": 1185,
+                "duration": 5
+              },
+              {
+                "idx": 10,
+                "describe": "下课",
+                "start": 1190,
+                "duration": 10
+              }
+            ]
+          },
+          {
+            "idx": 20,
+            "describe": "回到宿舍",
+            "start": 1200,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "回到宿舍",
+                "start": 1200,
+                "duration": 30
+              },
+              {
+                "idx": 1,
+                "describe": "检查手机消息",
+                "start": 1230,
+                "duration": 10
+              },
+              {
+                "idx": 2,
+                "describe": "检查课程安排",
+                "start": 1240,
+                "duration": 10
+              },
+              {
+                "idx": 3,
+                "describe": "整理书包",
+                "start": 1250,
+                "duration": 10
+              }
+            ]
+          },
+          {
+            "idx": 21,
+            "describe": "洗澡",
+            "start": 1260,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "洗澡",
+                "start": 1260,
+                "duration": 5
+              },
+              {
+                "idx": 1,
+                "describe": "准备洗浴用品",
+                "start": 1265,
+                "duration": 5
+              },
+              {
+                "idx": 2,
+                "describe": "调节浴室温度",
+                "start": 1270,
+                "duration": 5
+              },
+              {
+                "idx": 3,
+                "describe": "洗净身体",
+                "start": 1275,
+                "duration": 5
+              },
+              {
+                "idx": 4,
+                "describe": "洗头发",
+                "start": 1280,
+                "duration": 5
+              },
+              {
+                "idx": 5,
+                "describe": "洗脸和洗手",
+                "start": 1285,
+                "duration": 5
+              },
+              {
+                "idx": 6,
+                "describe": "洗澡",
+                "start": 1290,
+                "duration": 5
+              },
+              {
+                "idx": 7,
+                "describe": "润肤",
+                "start": 1295,
+                "duration": 5
+              },
+              {
+                "idx": 8,
+                "describe": "穿上干净的睡衣",
+                "start": 1300,
+                "duration": 5
+              },
+              {
+                "idx": 9,
+                "describe": "准备入睡",
+                "start": 1305,
+                "duration": 5
+              },
+              {
+                "idx": 10,
+                "describe": "洗澡",
+                "start": 1310,
+                "duration": 10
+              }
+            ]
+          },
+          {
+            "idx": 22,
+            "describe": "晚上10点前休息",
+            "start": 1320,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "洗澡",
+                "start": 1320,
+                "duration": 30
+              },
+              {
+                "idx": 1,
+                "describe": "准备睡前例行事项",
+                "start": 1350,
+                "duration": 15
+              },
+              {
+                "idx": 2,
+                "describe": "整理房间",
+                "start": 1365,
+                "duration": 10
+              },
+              {
+                "idx": 3,
+                "describe": "看一会儿书或听音乐",
+                "start": 1375,
+                "duration": 5
+              }
+            ]
+          },
+          {
+            "idx": 23,
+            "describe": "睡觉",
+            "start": 1380,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "准备睡觉",
+                "start": 1380,
+                "duration": 15
+              },
+              {
+                "idx": 1,
+                "describe": "放松身心",
+                "start": 1395,
+                "duration": 15
+              },
+              {
+                "idx": 2,
+                "describe": "检查手机消息",
+                "start": 1410,
+                "duration": 10
+              },
+              {
+                "idx": 3,
+                "describe": "关闭电子设备",
+                "start": 1420,
+                "duration": 10
+              },
+              {
+                "idx": 4,
+                "describe": "轻轻翻身调整姿势",
+                "start": 1430,
+                "duration": 5
+              },
+              {
+                "idx": 5,
+                "describe": "进入深度睡眠",
+                "start": 1435,
+                "duration": 5
+              }
+            ]
+          },
+          {
+            "idx": 24,
+            "describe": "睡觉",
+            "start": 1440,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 25,
+            "describe": "睡觉",
+            "start": 1500,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 26,
+            "describe": "睡觉",
+            "start": 1560,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 27,
+            "describe": "睡觉",
+            "start": 1620,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 28,
+            "describe": "睡觉",
+            "start": 1680,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 29,
+            "describe": "睡觉",
+            "start": 1740,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 30,
+            "describe": "起床",
+            "start": 1800,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 31,
+            "describe": "吃早餐",
+            "start": 1860,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 32,
+            "describe": "前往奥克山学院图书馆上课",
+            "start": 1920,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 33,
+            "describe": "前往奥克山学院图书馆上课",
+            "start": 1980,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 34,
+            "describe": "在图书馆学习莎士比亚戏剧的语言",
+            "start": 2040,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 35,
+            "describe": "在图书馆学习莎士比亚戏剧的语言",
+            "start": 2100,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 36,
+            "describe": "在图书馆学习莎士比亚戏剧的语言",
+            "start": 2160,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 37,
+            "describe": "在图书馆学习莎士比亚戏剧的语言",
+            "start": 2220,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 38,
+            "describe": "在图书馆学习莎士比亚戏剧的语言",
+            "start": 2280,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 39,
+            "describe": "休息和准备午餐",
+            "start": 2340,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 40,
+            "describe": "休息和准备午餐",
+            "start": 2400,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 41,
+            "describe": "下午5点吃晚饭",
+            "start": 2460,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 42,
+            "describe": "继续在图书馆学习和写作",
+            "start": 2520,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 43,
+            "describe": "继续在图书馆学习和写作",
+            "start": 2580,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 44,
+            "describe": "进行阅读和写作练习",
+            "start": 2640,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 45,
+            "describe": "进行阅读和写作练习",
+            "start": 2700,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 46,
+            "describe": "晚上8点到10点进行阅读和写作练习",
+            "start": 2760,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 47,
+            "describe": "晚上8点到10点进行阅读和写作练习",
+            "start": 2820,
+            "duration": 60,
+            "decompose": {}
+          }
+        ]
+      },
+      "associate": {
+        "memory": {
+          "event": [
+            "node_56",
+            "node_55",
+            "node_54",
+            "node_53",
+            "node_52",
+            "node_51",
+            "node_50",
+            "node_49",
+            "node_48",
+            "node_30",
+            "node_29",
+            "node_28",
+            "node_27",
+            "node_26",
+            "node_25",
+            "node_24",
+            "node_23",
+            "node_22",
+            "node_21",
+            "node_20",
+            "node_19",
+            "node_18",
+            "node_17",
+            "node_16",
+            "node_15",
+            "node_14",
+            "node_13",
+            "node_12",
+            "node_11",
+            "node_10",
+            "node_9",
+            "node_8",
+            "node_7",
+            "node_5",
+            "node_4",
+            "node_2",
+            "node_1"
+          ],
+          "thought": [
+            "node_57",
+            "node_47",
+            "node_46",
+            "node_45",
+            "node_44",
+            "node_43",
+            "node_42",
+            "node_41",
+            "node_40",
+            "node_39",
+            "node_38",
+            "node_37",
+            "node_36",
+            "node_35",
+            "node_34",
+            "node_33",
+            "node_32",
+            "node_31",
+            "node_0"
+          ],
+          "chat": [
+            "node_6",
+            "node_3"
+          ]
+        }
+      },
+      "chats": [],
+      "currently": "阿伊莎在2025-09-26继续专注于莎士比亚戏剧的语言研究与写作学习，内心充满对学术探索的热情和对时间管理的自信",
+      "action": {
+        "event": {
+          "subject": "阿伊莎",
+          "predicate": "正在",
+          "object": "睡觉",
+          "describe": "",
+          "address": [
+            "the Ville",
+            "奥克山学院宿舍",
+            "阿伊莎的房间",
+            "床"
+          ],
+          "emoji": "😴"
+        },
+        "obj_event": {
+          "subject": "床",
+          "predicate": "被占用",
+          "object": "阿伊莎",
+          "describe": "",
+          "address": [
+            "the Ville",
+            "奥克山学院宿舍",
+            "阿伊莎的房间",
+            "床"
+          ],
+          "emoji": "🛌"
+        },
+        "start": "20250926-02:00:00",
+        "duration": 60
+      },
+      "coord": [
+        118,
+        61
+      ]
+    },
+    "克劳斯": {
+      "config_path": "assets\\village\\agents\\克劳斯\\agent.json",
+      "status": {
+        "poignancy": 43
+      },
+      "schedule": {
+        "create": "20250926-00:00:00",
+        "daily_schedule": [
+          {
+            "idx": 0,
+            "describe": "睡觉",
+            "start": 0,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "睡觉",
+                "start": 0,
+                "duration": 5
+              },
+              {
+                "idx": 1,
+                "describe": "睡觉",
+                "start": 5,
+                "duration": 5
+              },
+              {
+                "idx": 2,
+                "describe": "睡觉",
+                "start": 10,
+                "duration": 5
+              },
+              {
+                "idx": 3,
+                "describe": "睡觉",
+                "start": 15,
+                "duration": 5
+              },
+              {
+                "idx": 4,
+                "describe": "睡觉",
+                "start": 20,
+                "duration": 5
+              },
+              {
+                "idx": 5,
+                "describe": "睡觉",
+                "start": 25,
+                "duration": 5
+              },
+              {
+                "idx": 6,
+                "describe": "睡觉",
+                "start": 30,
+                "duration": 5
+              },
+              {
+                "idx": 7,
+                "describe": "睡觉",
+                "start": 35,
+                "duration": 5
+              },
+              {
+                "idx": 8,
+                "describe": "睡觉",
+                "start": 40,
+                "duration": 5
+              },
+              {
+                "idx": 9,
+                "describe": "睡觉",
+                "start": 45,
+                "duration": 5
+              },
+              {
+                "idx": 10,
+                "describe": "睡觉",
+                "start": 50,
+                "duration": 10
+              }
+            ]
+          },
+          {
+            "idx": 1,
+            "describe": "睡觉",
+            "start": 60,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "睡觉",
+                "start": 60,
+                "duration": 5
+              },
+              {
+                "idx": 1,
+                "describe": "睡觉",
+                "start": 65,
+                "duration": 5
+              },
+              {
+                "idx": 2,
+                "describe": "睡觉",
+                "start": 70,
+                "duration": 5
+              },
+              {
+                "idx": 3,
+                "describe": "睡觉",
+                "start": 75,
+                "duration": 5
+              },
+              {
+                "idx": 4,
+                "describe": "睡觉",
+                "start": 80,
+                "duration": 5
+              },
+              {
+                "idx": 5,
+                "describe": "睡觉",
+                "start": 85,
+                "duration": 5
+              },
+              {
+                "idx": 6,
+                "describe": "睡觉",
+                "start": 90,
+                "duration": 5
+              },
+              {
+                "idx": 7,
+                "describe": "睡觉",
+                "start": 95,
+                "duration": 5
+              },
+              {
+                "idx": 8,
+                "describe": "睡觉",
+                "start": 100,
+                "duration": 5
+              },
+              {
+                "idx": 9,
+                "describe": "睡觉",
+                "start": 105,
+                "duration": 5
+              },
+              {
+                "idx": 10,
+                "describe": "睡觉",
+                "start": 110,
+                "duration": 10
+              }
+            ]
+          },
+          {
+            "idx": 2,
+            "describe": "睡觉",
+            "start": 120,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "睡觉",
+                "start": 120,
+                "duration": 5
+              },
+              {
+                "idx": 1,
+                "describe": "睡觉",
+                "start": 125,
+                "duration": 5
+              },
+              {
+                "idx": 2,
+                "describe": "睡觉",
+                "start": 130,
+                "duration": 5
+              },
+              {
+                "idx": 3,
+                "describe": "睡觉",
+                "start": 135,
+                "duration": 5
+              },
+              {
+                "idx": 4,
+                "describe": "睡觉",
+                "start": 140,
+                "duration": 5
+              },
+              {
+                "idx": 5,
+                "describe": "睡觉",
+                "start": 145,
+                "duration": 5
+              },
+              {
+                "idx": 6,
+                "describe": "睡觉",
+                "start": 150,
+                "duration": 5
+              },
+              {
+                "idx": 7,
+                "describe": "睡觉",
+                "start": 155,
+                "duration": 5
+              },
+              {
+                "idx": 8,
+                "describe": "睡觉",
+                "start": 160,
+                "duration": 5
+              },
+              {
+                "idx": 9,
+                "describe": "睡觉",
+                "start": 165,
+                "duration": 5
+              },
+              {
+                "idx": 10,
+                "describe": "睡觉",
+                "start": 170,
+                "duration": 10
+              }
+            ]
+          },
+          {
+            "idx": 3,
+            "describe": "睡觉",
+            "start": 180,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "睡觉",
+                "start": 180,
+                "duration": 5
+              },
+              {
+                "idx": 1,
+                "describe": "睡觉",
+                "start": 185,
+                "duration": 5
+              },
+              {
+                "idx": 2,
+                "describe": "睡觉",
+                "start": 190,
+                "duration": 5
+              },
+              {
+                "idx": 3,
+                "describe": "睡觉",
+                "start": 195,
+                "duration": 5
+              },
+              {
+                "idx": 4,
+                "describe": "睡觉",
+                "start": 200,
+                "duration": 5
+              },
+              {
+                "idx": 5,
+                "describe": "睡觉",
+                "start": 205,
+                "duration": 5
+              },
+              {
+                "idx": 6,
+                "describe": "睡觉",
+                "start": 210,
+                "duration": 5
+              },
+              {
+                "idx": 7,
+                "describe": "睡",
+                "start": 215,
+                "duration": 5
+              },
+              {
+                "idx": 8,
+                "describe": "睡觉",
+                "start": 220,
+                "duration": 5
+              },
+              {
+                "idx": 9,
+                "describe": "睡觉",
+                "start": 225,
+                "duration": 5
+              },
+              {
+                "idx": 10,
+                "describe": "睡觉",
+                "start": 230,
+                "duration": 10
+              }
+            ]
+          },
+          {
+            "idx": 4,
+            "describe": "睡觉",
+            "start": 240,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 5,
+            "describe": "睡觉",
+            "start": 300,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 6,
+            "describe": "睡觉",
+            "start": 360,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 7,
+            "describe": "起床",
+            "start": 420,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 8,
+            "describe": "去奥克山学院的图书馆",
+            "start": 480,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 9,
+            "describe": "写作",
+            "start": 540,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 10,
+            "describe": "写作",
+            "start": 600,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 11,
+            "describe": "去霍布斯咖啡馆吃午饭",
+            "start": 660,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 12,
+            "describe": "写作",
+            "start": 720,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 13,
+            "describe": "写作",
+            "start": 780,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 14,
+            "describe": "继续写作",
+            "start": 840,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 15,
+            "describe": "去图书馆查阅资料",
+            "start": 900,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 16,
+            "describe": "查阅资料",
+            "start": 960,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 17,
+            "describe": "继续写作",
+            "start": 1020,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "查阅相关学术论文",
+                "start": 1020,
+                "duration": 10
+              },
+              {
+                "idx": 1,
+                "describe": "克劳斯与阿伊莎讨论文学与社会结构的关系，探讨莎士比亚作品是否反映当时阶级状况。",
+                "start": 1030,
+                "duration": 10
+              },
+              {
+                "idx": 2,
+                "describe": "整理查阅到的资料",
+                "start": 1040,
+                "duration": 10
+              },
+              {
+                "idx": 3,
+                "describe": "撰写论文的引言部分",
+                "start": 1050,
+                "duration": 15
+              },
+              {
+                "idx": 4,
+                "describe": "分析数据并进行注释",
+                "start": 1065,
+                "duration": 10
+              },
+              {
+                "idx": 5,
+                "describe": "检查论文结构是否合理",
+                "start": 1075,
+                "duration": 5
+              }
+            ]
+          },
+          {
+            "idx": 18,
+            "describe": "吃晚饭",
+            "start": 1080,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "洗漱",
+                "start": 1080,
+                "duration": 5
+              },
+              {
+                "idx": 1,
+                "describe": "准备晚餐食材",
+                "start": 1085,
+                "duration": 10
+              },
+              {
+                "idx": 2,
+                "describe": "烹饪晚餐",
+                "start": 1095,
+                "duration": 15
+              },
+              {
+                "idx": 3,
+                "describe": "洗碗",
+                "start": 1110,
+                "duration": 5
+              },
+              {
+                "idx": 4,
+                "describe": "整理餐桌",
+                "start": 1115,
+                "duration": 5
+              },
+              {
+                "idx": 5,
+                "describe": "检查晚餐是否符合研究论文主题",
+                "start": 1120,
+                "duration": 10
+              },
+              {
+                "idx": 6,
+                "describe": "记录晚餐思考",
+                "start": 1130,
+                "duration": 5
+              },
+              {
+                "idx": 7,
+                "describe": "整理厨房",
+                "start": 1135,
+                "duration": 5
+              }
+            ]
+          },
+          {
+            "idx": 19,
+            "describe": "继续写作",
+            "start": 1140,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "确定论文的下一章节",
+                "start": 1140,
+                "duration": 15
+              },
+              {
+                "idx": 1,
+                "describe": "查阅相关文献资料",
+                "start": 1155,
+                "duration": 10
+              },
+              {
+                "idx": 2,
+                "describe": "整理研究数据",
+                "start": 1165,
+                "duration": 15
+              },
+              {
+                "idx": 3,
+                "describe": "撰写论文段落",
+                "start": 1180,
+                "duration": 10
+              },
+              {
+                "idx": 4,
+                "describe": "检查论文逻辑结构",
+                "start": 1190,
+                "duration": 5
+              },
+              {
+                "idx": 5,
+                "describe": "保存并备份写作内容",
+                "start": 1195,
+                "duration": 5
+              }
+            ]
+          },
+          {
+            "idx": 20,
+            "describe": "看电视",
+            "start": 1200,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "看电视",
+                "start": 1200,
+                "duration": 5
+              },
+              {
+                "idx": 1,
+                "describe": "选择电视剧或节目",
+                "start": 1205,
+                "duration": 5
+              },
+              {
+                "idx": 2,
+                "describe": "调整电视音量和画面",
+                "start": 1210,
+                "duration": 5
+              },
+              {
+                "idx": 3,
+                "describe": "坐下观看电视节目",
+                "start": 1215,
+                "duration": 5
+              },
+              {
+                "idx": 4,
+                "describe": "记录电视节目内容",
+                "start": 1220,
+                "duration": 5
+              },
+              {
+                "idx": 5,
+                "describe": "与电视节目互动",
+                "start": 1225,
+                "duration": 5
+              },
+              {
+                "idx": 6,
+                "describe": "休息或放松",
+                "start": 1230,
+                "duration": 5
+              },
+              {
+                "idx": 7,
+                "describe": "喝水或小憩",
+                "start": 1235,
+                "duration": 5
+              },
+              {
+                "idx": 8,
+                "describe": "与电视节目保持同步",
+                "start": 1240,
+                "duration": 5
+              },
+              {
+                "idx": 9,
+                "describe": "结束看电视",
+                "start": 1245,
+                "duration": 5
+              },
+              {
+                "idx": 10,
+                "describe": "看电视",
+                "start": 1250,
+                "duration": 10
+              }
+            ]
+          },
+          {
+            "idx": 21,
+            "describe": "看电视",
+            "start": 1260,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "看电视",
+                "start": 1260,
+                "duration": 15
+              },
+              {
+                "idx": 1,
+                "describe": "做晚饭准备",
+                "start": 1275,
+                "duration": 15
+              },
+              {
+                "idx": 2,
+                "describe": "选择晚餐菜单",
+                "start": 1290,
+                "duration": 15
+              },
+              {
+                "idx": 3,
+                "describe": "洗碗",
+                "start": 1305,
+                "duration": 15
+              }
+            ]
+          },
+          {
+            "idx": 22,
+            "describe": "看电视",
+            "start": 1320,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "准备睡觉前的例行事项",
+                "start": 1320,
+                "duration": 15
+              },
+              {
+                "idx": 1,
+                "describe": "看电视节目",
+                "start": 1335,
+                "duration": 20
+              },
+              {
+                "idx": 2,
+                "describe": "做睡前放松活动",
+                "start": 1355,
+                "duration": 15
+              },
+              {
+                "idx": 3,
+                "describe": "检查手机消息",
+                "start": 1370,
+                "duration": 10
+              },
+              {
+                "idx": 4,
+                "describe": "做最后的深呼吸准备",
+                "start": 1380,
+                "duration": 5
+              }
+            ]
+          },
+          {
+            "idx": 23,
+            "describe": "睡觉",
+            "start": 1380,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "准备睡觉前的例行事项",
+                "start": 1380,
+                "duration": 15
+              },
+              {
+                "idx": 1,
+                "describe": "放松身体",
+                "start": 1395,
+                "duration": 10
+              },
+              {
+                "idx": 2,
+                "describe": "睡前阅读",
+                "start": 1405,
+                "duration": 10
+              },
+              {
+                "idx": 3,
+                "describe": "检查手机消息",
+                "start": 1415,
+                "duration": 10
+              },
+              {
+                "idx": 4,
+                "describe": "做深呼吸放松",
+                "start": 1425,
+                "duration": 10
+              },
+              {
+                "idx": 5,
+                "describe": "进入睡眠状态",
+                "start": 1435,
+                "duration": 5
+              }
+            ]
+          },
+          {
+            "idx": 24,
+            "describe": "睡觉",
+            "start": 1440,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 25,
+            "describe": "睡觉",
+            "start": 1500,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 26,
+            "describe": "睡觉",
+            "start": 1560,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 27,
+            "describe": "睡觉",
+            "start": 1620,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 28,
+            "describe": "睡觉",
+            "start": 1680,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 29,
+            "describe": "睡觉",
+            "start": 1740,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 30,
+            "describe": "睡觉",
+            "start": 1800,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 31,
+            "describe": "起床",
+            "start": 1860,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 32,
+            "describe": "去奥克山学院的图书馆",
+            "start": 1920,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 33,
+            "describe": "写作",
+            "start": 1980,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 34,
+            "describe": "写作",
+            "start": 2040,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 35,
+            "describe": "在霍布斯咖啡馆吃午饭",
+            "start": 2100,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 36,
+            "describe": "写作",
+            "start": 2160,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 37,
+            "describe": "写作",
+            "start": 2220,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 38,
+            "describe": "去图书馆查阅资料",
+            "start": 2280,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 39,
+            "describe": "查阅资料",
+            "start": 2340,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 40,
+            "describe": "写作",
+            "start": 2400,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 41,
+            "describe": "写作",
+            "start": 2460,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 42,
+            "describe": "吃晚饭",
+            "start": 2520,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 43,
+            "describe": "看电视",
+            "start": 2580,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 44,
+            "describe": "看电视",
+            "start": 2640,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 45,
+            "describe": "看电视",
+            "start": 2700,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 46,
+            "describe": "看电视",
+            "start": 2760,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 47,
+            "describe": "睡觉",
+            "start": 2820,
+            "duration": 60,
+            "decompose": {}
+          }
+        ]
+      },
+      "associate": {
+        "memory": {
+          "event": [
+            "node_61",
+            "node_60",
+            "node_59",
+            "node_58",
+            "node_57",
+            "node_56",
+            "node_55",
+            "node_54",
+            "node_53",
+            "node_52",
+            "node_34",
+            "node_33",
+            "node_32",
+            "node_31",
+            "node_30",
+            "node_29",
+            "node_28",
+            "node_27",
+            "node_26",
+            "node_25",
+            "node_24",
+            "node_23",
+            "node_22",
+            "node_21",
+            "node_20",
+            "node_19",
+            "node_18",
+            "node_17",
+            "node_16",
+            "node_15",
+            "node_14",
+            "node_13",
+            "node_12",
+            "node_11",
+            "node_10",
+            "node_9",
+            "node_7",
+            "node_6",
+            "node_5",
+            "node_4",
+            "node_3",
+            "node_2",
+            "node_1"
+          ],
+          "thought": [
+            "node_62",
+            "node_51",
+            "node_50",
+            "node_49",
+            "node_48",
+            "node_47",
+            "node_46",
+            "node_45",
+            "node_44",
+            "node_43",
+            "node_42",
+            "node_41",
+            "node_40",
+            "node_39",
+            "node_38",
+            "node_37",
+            "node_36",
+            "node_35",
+            "node_0"
+          ],
+          "chat": [
+            "node_8"
+          ]
+        }
+      },
+      "chats": [],
+      "currently": "克劳斯在2025-09-26继续保持学术与生活的平衡，沉浸在研究与思考中，感受到一种充实而有序的满足感",
+      "action": {
+        "event": {
+          "subject": "克劳斯",
+          "predicate": "正在",
+          "object": "睡觉",
+          "describe": "",
+          "address": [
+            "the Ville",
+            "奥克山学院宿舍",
+            "克劳斯的房间",
+            "床"
+          ],
+          "emoji": "😴"
+        },
+        "obj_event": {
+          "subject": "床",
+          "predicate": "被占用",
+          "object": "克劳斯",
+          "describe": "",
+          "address": [
+            "the Ville",
+            "奥克山学院宿舍",
+            "克劳斯的房间",
+            "床"
+          ],
+          "emoji": "🛌"
+        },
+        "start": "20250926-02:00:00",
+        "duration": 60
+      },
+      "coord": [
+        127,
+        46
+      ]
+    },
+    "玛丽亚": {
+      "config_path": "assets\\village\\agents\\玛丽亚\\agent.json",
+      "status": {
+        "poignancy": 18
+      },
+      "schedule": {
+        "create": "20250926-00:00:00",
+        "daily_schedule": [
+          {
+            "idx": 0,
+            "describe": "睡觉",
+            "start": 0,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "准备睡觉前的例行事项",
+                "start": 0,
+                "duration": 15
+              },
+              {
+                "idx": 1,
+                "describe": "放松身心，进行深呼吸或冥想",
+                "start": 15,
+                "duration": 15
+              },
+              {
+                "idx": 2,
+                "describe": "关闭电子设备，为睡眠做准备",
+                "start": 30,
+                "duration": 10
+              },
+              {
+                "idx": 3,
+                "describe": "轻轻拉伸身体，缓解一天的疲劳",
+                "start": 40,
+                "duration": 10
+              },
+              {
+                "idx": 4,
+                "describe": "进入睡眠状态",
+                "start": 50,
+                "duration": 5
+              },
+              {
+                "idx": 5,
+                "describe": "保持睡眠，恢复精力",
+                "start": 55,
+                "duration": 5
+              }
+            ]
+          },
+          {
+            "idx": 1,
+            "describe": "睡觉",
+            "start": 60,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "睡觉",
+                "start": 60,
+                "duration": 5
+              },
+              {
+                "idx": 1,
+                "describe": "睡觉",
+                "start": 65,
+                "duration": 5
+              },
+              {
+                "idx": 2,
+                "describe": "睡觉",
+                "start": 70,
+                "duration": 5
+              },
+              {
+                "idx": 3,
+                "describe": "睡觉",
+                "start": 75,
+                "duration": 5
+              },
+              {
+                "idx": 4,
+                "describe": "睡觉",
+                "start": 80,
+                "duration": 5
+              },
+              {
+                "idx": 5,
+                "describe": "睡觉",
+                "start": 85,
+                "duration": 5
+              },
+              {
+                "idx": 6,
+                "describe": "睡觉",
+                "start": 90,
+                "duration": 5
+              },
+              {
+                "idx": 7,
+                "describe": "睡觉",
+                "start": 95,
+                "duration": 5
+              },
+              {
+                "idx": 8,
+                "describe": "睡觉",
+                "start": 100,
+                "duration": 5
+              },
+              {
+                "idx": 9,
+                "describe": "睡觉",
+                "start": 105,
+                "duration": 5
+              },
+              {
+                "idx": 10,
+                "describe": "睡觉",
+                "start": 110,
+                "duration": 10
+              }
+            ]
+          },
+          {
+            "idx": 2,
+            "describe": "睡觉",
+            "start": 120,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "睡觉",
+                "start": 120,
+                "duration": 5
+              },
+              {
+                "idx": 1,
+                "describe": "睡觉",
+                "start": 125,
+                "duration": 5
+              },
+              {
+                "idx": 2,
+                "describe": "睡觉",
+                "start": 130,
+                "duration": 5
+              },
+              {
+                "idx": 3,
+                "describe": "睡觉",
+                "start": 135,
+                "duration": 5
+              },
+              {
+                "idx": 4,
+                "describe": "睡觉",
+                "start": 140,
+                "duration": 5
+              },
+              {
+                "idx": 5,
+                "describe": "睡觉",
+                "start": 145,
+                "duration": 5
+              },
+              {
+                "idx": 6,
+                "describe": "睡觉",
+                "start": 150,
+                "duration": 5
+              },
+              {
+                "idx": 7,
+                "describe": "睡觉",
+                "start": 155,
+                "duration": 5
+              },
+              {
+                "idx": 8,
+                "describe": "睡觉",
+                "start": 160,
+                "duration": 5
+              },
+              {
+                "idx": 9,
+                "describe": "睡觉",
+                "start": 165,
+                "duration": 5
+              },
+              {
+                "idx": 10,
+                "describe": "睡觉",
+                "start": 170,
+                "duration": 10
+              }
+            ]
+          },
+          {
+            "idx": 3,
+            "describe": "睡觉",
+            "start": 180,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "进入睡眠状态",
+                "start": 180,
+                "duration": 5
+              },
+              {
+                "idx": 1,
+                "describe": "呼吸调整",
+                "start": 185,
+                "duration": 5
+              },
+              {
+                "idx": 2,
+                "describe": "放松身体",
+                "start": 190,
+                "duration": 5
+              },
+              {
+                "idx": 3,
+                "describe": "想象放松场景",
+                "start": 195,
+                "duration": 5
+              },
+              {
+                "idx": 4,
+                "describe": "减少外界干扰",
+                "start": 200,
+                "duration": 5
+              },
+              {
+                "idx": 5,
+                "describe": "身体放松",
+                "start": 205,
+                "duration": 5
+              },
+              {
+                "idx": 6,
+                "describe": "睡眠周期调整",
+                "start": 210,
+                "duration": 5
+              },
+              {
+                "idx": 7,
+                "describe": "呼吸节奏控制",
+                "start": 215,
+                "duration": 5
+              },
+              {
+                "idx": 8,
+                "describe": "放松大脑",
+                "start": 220,
+                "duration": 5
+              },
+              {
+                "idx": 9,
+                "describe": "进入深度睡眠",
+                "start": 225,
+                "duration": 5
+              },
+              {
+                "idx": 10,
+                "describe": "睡觉",
+                "start": 230,
+                "duration": 10
+              }
+            ]
+          },
+          {
+            "idx": 4,
+            "describe": "睡觉",
+            "start": 240,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 5,
+            "describe": "睡觉",
+            "start": 300,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 6,
+            "describe": "睡觉",
+            "start": 360,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 7,
+            "describe": "睡觉",
+            "start": 420,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 8,
+            "describe": "睡觉",
+            "start": 480,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 9,
+            "describe": "睡觉",
+            "start": 540,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 10,
+            "describe": "起床",
+            "start": 600,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 11,
+            "describe": "前往霍布斯咖啡馆学习并吃早餐",
+            "start": 660,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 12,
+            "describe": "在Twitch直播游戏",
+            "start": 720,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 13,
+            "describe": "继续直播或玩游戏",
+            "start": 780,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 14,
+            "describe": "结束直播，去咖啡馆与朋友聊天",
+            "start": 840,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 15,
+            "describe": "吃晚饭",
+            "start": 900,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 16,
+            "describe": "准备睡觉，复习物理课程内容",
+            "start": 960,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 17,
+            "describe": "复习物理课程内容",
+            "start": 1020,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "复习物理课程内容",
+                "start": 1020,
+                "duration": 15
+              },
+              {
+                "idx": 1,
+                "describe": "整理笔记并标记重点",
+                "start": 1035,
+                "duration": 10
+              },
+              {
+                "idx": 2,
+                "describe": "回顾上周的作业和测验",
+                "start": 1045,
+                "duration": 10
+              },
+              {
+                "idx": 3,
+                "describe": "预习明天的课程内容",
+                "start": 1055,
+                "duration": 10
+              },
+              {
+                "idx": 4,
+                "describe": "休息一下，补充能量",
+                "start": 1065,
+                "duration": 5
+              },
+              {
+                "idx": 5,
+                "describe": "检查物理课程的参考资料",
+                "start": 1070,
+                "duration": 5
+              },
+              {
+                "idx": 6,
+                "describe": "做一些简单的物理练习题",
+                "start": 1075,
+                "duration": 5
+              }
+            ]
+          },
+          {
+            "idx": 18,
+            "describe": "复习物理课程内容",
+            "start": 1080,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "回顾物理课程笔记",
+                "start": 1080,
+                "duration": 15
+              },
+              {
+                "idx": 1,
+                "describe": "完成作业练习题",
+                "start": 1095,
+                "duration": 10
+              },
+              {
+                "idx": 2,
+                "describe": "查阅物理教材中的新章节",
+                "start": 1105,
+                "duration": 10
+              },
+              {
+                "idx": 3,
+                "describe": "记录学习中的疑问",
+                "start": 1115,
+                "duration": 10
+              },
+              {
+                "idx": 4,
+                "describe": "为后续直播准备内容",
+                "start": 1125,
+                "duration": 10
+              },
+              {
+                "idx": 5,
+                "describe": "检查Twitch直播的准备工作",
+                "start": 1135,
+                "duration": 5
+              }
+            ]
+          },
+          {
+            "idx": 19,
+            "describe": "复习物理课程内容",
+            "start": 1140,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "复习物理课程内容",
+                "start": 1140,
+                "duration": 15
+              },
+              {
+                "idx": 1,
+                "describe": "做笔记整理重点",
+                "start": 1155,
+                "duration": 10
+              },
+              {
+                "idx": 2,
+                "describe": "查阅相关教材或资料",
+                "start": 1165,
+                "duration": 10
+              },
+              {
+                "idx": 3,
+                "describe": "做练习题巩固知识",
+                "start": 1175,
+                "duration": 10
+              },
+              {
+                "idx": 4,
+                "describe": "与同学讨论难点问题",
+                "start": 1185,
+                "duration": 10
+              },
+              {
+                "idx": 5,
+                "describe": "简要总结复习内容",
+                "start": 1195,
+                "duration": 5
+              }
+            ]
+          },
+          {
+            "idx": 20,
+            "describe": "复习物理课程内容",
+            "start": 1200,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "复习物理课程内容",
+                "start": 1200,
+                "duration": 15
+              },
+              {
+                "idx": 1,
+                "describe": "做笔记整理重点",
+                "start": 1215,
+                "duration": 10
+              },
+              {
+                "idx": 2,
+                "describe": "查阅相关教材补充知识",
+                "start": 1225,
+                "duration": 10
+              },
+              {
+                "idx": 3,
+                "describe": "做练习题巩固知识点",
+                "start": 1235,
+                "duration": 10
+              },
+              {
+                "idx": 4,
+                "describe": "与同学讨论问题",
+                "start": 1245,
+                "duration": 10
+              },
+              {
+                "idx": 5,
+                "describe": "检查复习进度并调整计划",
+                "start": 1255,
+                "duration": 5
+              }
+            ]
+          },
+          {
+            "idx": 21,
+            "describe": "复习物理课程内容",
+            "start": 1260,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "复习物理课程内容",
+                "start": 1260,
+                "duration": 15
+              },
+              {
+                "idx": 1,
+                "describe": "记录复习笔记",
+                "start": 1275,
+                "duration": 10
+              },
+              {
+                "idx": 2,
+                "describe": "回顾课堂讲义",
+                "start": 1285,
+                "duration": 10
+              },
+              {
+                "idx": 3,
+                "describe": "做物理习题练习",
+                "start": 1295,
+                "duration": 10
+              },
+              {
+                "idx": 4,
+                "describe": "与同学讨论难题",
+                "start": 1305,
+                "duration": 10
+              },
+              {
+                "idx": 5,
+                "describe": "整理复习资料",
+                "start": 1315,
+                "duration": 5
+              }
+            ]
+          },
+          {
+            "idx": 22,
+            "describe": "复习物理课程内容",
+            "start": 1320,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "回顾物理课程笔记",
+                "start": 1320,
+                "duration": 15
+              },
+              {
+                "idx": 1,
+                "describe": "整理复习重点",
+                "start": 1335,
+                "duration": 10
+              },
+              {
+                "idx": 2,
+                "describe": "查阅相关教材",
+                "start": 1345,
+                "duration": 10
+              },
+              {
+                "idx": 3,
+                "describe": "做练习题巩固知识",
+                "start": 1355,
+                "duration": 10
+              },
+              {
+                "idx": 4,
+                "describe": "记录难点和疑问",
+                "start": 1365,
+                "duration": 5
+              },
+              {
+                "idx": 5,
+                "describe": "预习下一章内容",
+                "start": 1370,
+                "duration": 5
+              },
+              {
+                "idx": 6,
+                "describe": "检查复习进度",
+                "start": 1375,
+                "duration": 5
+              }
+            ]
+          },
+          {
+            "idx": 23,
+            "describe": "复习物理课程内容",
+            "start": 1380,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "复习物理课程内容",
+                "start": 1380,
+                "duration": 15
+              },
+              {
+                "idx": 1,
+                "describe": "复习物理课程内容",
+                "start": 1395,
+                "duration": 10
+              },
+              {
+                "idx": 2,
+                "describe": "复习物理课程内容",
+                "start": 1405,
+                "duration": 10
+              },
+              {
+                "idx": 3,
+                "describe": "复习物理的数学基础",
+                "start": 1415,
+                "duration": 10
+              },
+              {
+                "idx": 4,
+                "describe": "复习物理的实验部分",
+                "start": 1425,
+                "duration": 10
+              },
+              {
+                "idx": 5,
+                "describe": "复习物理的理论部分",
+                "start": 1435,
+                "duration": 5
+              }
+            ]
+          },
+          {
+            "idx": 24,
+            "describe": "睡觉",
+            "start": 1440,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 25,
+            "describe": "睡觉",
+            "start": 1500,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 26,
+            "describe": "睡觉",
+            "start": 1560,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 27,
+            "describe": "睡觉",
+            "start": 1620,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 28,
+            "describe": "睡觉",
+            "start": 1680,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 29,
+            "describe": "睡觉",
+            "start": 1740,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 30,
+            "describe": "睡觉",
+            "start": 1800,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 31,
+            "describe": "睡觉",
+            "start": 1860,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 32,
+            "describe": "睡觉",
+            "start": 1920,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 33,
+            "describe": "睡觉",
+            "start": 1980,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 34,
+            "describe": "起床",
+            "start": 2040,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 35,
+            "describe": "准备早餐并吃早餐",
+            "start": 2100,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 36,
+            "describe": "进行一个小时的物理课程学习",
+            "start": 2160,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 37,
+            "describe": "参加线上学术讨论会",
+            "start": 2220,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 38,
+            "describe": "开始第一小时的Twitch直播",
+            "start": 2280,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 39,
+            "describe": "进行半小时的休息和放松",
+            "start": 2340,
+            "duration": 30,
+            "decompose": {}
+          },
+          {
+            "idx": 40,
+            "describe": "开始进行一个小时的物理实验准备",
+            "start": 2370,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 41,
+            "describe": "开始第二小时的Twitch直播",
+            "start": 2430,
+            "duration": 30,
+            "decompose": {}
+          },
+          {
+            "idx": 42,
+            "describe": "吃午饭",
+            "start": 2460,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 43,
+            "describe": "进行一个小时的休息和短暂散步",
+            "start": 2520,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 44,
+            "describe": "进行一个小时的物理学习",
+            "start": 2580,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 45,
+            "describe": "进行一个小时的Twitch直播",
+            "start": 2640,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 46,
+            "describe": "进行半小时的休息",
+            "start": 2700,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 47,
+            "describe": "开始进行一个小时的物理学习",
+            "start": 2760,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 48,
+            "describe": "准备晚餐",
+            "start": 2820,
+            "duration": 60,
+            "decompose": {}
+          }
+        ]
+      },
+      "associate": {
+        "memory": {
+          "event": [
+            "node_95",
+            "node_94",
+            "node_93",
+            "node_77",
+            "node_76",
+            "node_75",
+            "node_74",
+            "node_73",
+            "node_72",
+            "node_71",
+            "node_70",
+            "node_69",
+            "node_68",
+            "node_67",
+            "node_66",
+            "node_65",
+            "node_64",
+            "node_63",
+            "node_62",
+            "node_61",
+            "node_60",
+            "node_59",
+            "node_58",
+            "node_57",
+            "node_56",
+            "node_55",
+            "node_54",
+            "node_53",
+            "node_52",
+            "node_51",
+            "node_50",
+            "node_49",
+            "node_48",
+            "node_47",
+            "node_46",
+            "node_30",
+            "node_29",
+            "node_28",
+            "node_27",
+            "node_26",
+            "node_25",
+            "node_24",
+            "node_23",
+            "node_22",
+            "node_21",
+            "node_20",
+            "node_19",
+            "node_18",
+            "node_17",
+            "node_16",
+            "node_15",
+            "node_14",
+            "node_13",
+            "node_12",
+            "node_11",
+            "node_10",
+            "node_9",
+            "node_8",
+            "node_7",
+            "node_6",
+            "node_5",
+            "node_4",
+            "node_3",
+            "node_2",
+            "node_1"
+          ],
+          "thought": [
+            "node_96",
+            "node_92",
+            "node_91",
+            "node_90",
+            "node_89",
+            "node_88",
+            "node_87",
+            "node_86",
+            "node_85",
+            "node_84",
+            "node_83",
+            "node_82",
+            "node_81",
+            "node_80",
+            "node_79",
+            "node_78",
+            "node_45",
+            "node_44",
+            "node_43",
+            "node_42",
+            "node_41",
+            "node_40",
+            "node_39",
+            "node_38",
+            "node_37",
+            "node_36",
+            "node_35",
+            "node_34",
+            "node_33",
+            "node_32",
+            "node_31",
+            "node_0"
+          ],
+          "chat": []
+        }
+      },
+      "chats": [],
+      "currently": "玛丽亚在2025-09-26依然保持充实而有条不紊的状态，用心平衡学习、直播与休息，用科学的时间管理让自己高效成长",
+      "action": {
+        "event": {
+          "subject": "玛丽亚",
+          "predicate": "正在",
+          "object": "睡觉",
+          "describe": "",
+          "address": [
+            "the Ville",
+            "奥克山学院宿舍",
+            "玛丽亚的房间",
+            "床"
+          ],
+          "emoji": "😴"
+        },
+        "obj_event": {
+          "subject": "床",
+          "predicate": "被占用",
+          "object": "玛丽亚",
+          "describe": "",
+          "address": [
+            "the Ville",
+            "奥克山学院宿舍",
+            "玛丽亚的房间",
+            "床"
+          ],
+          "emoji": "🛌"
+        },
+        "start": "20250926-02:00:00",
+        "duration": 60
+      },
+      "coord": [
+        123,
+        57
+      ]
+    },
+    "沃尔夫冈": {
+      "config_path": "assets\\village\\agents\\沃尔夫冈\\agent.json",
+      "status": {
+        "poignancy": 90
+      },
+      "schedule": {
+        "create": "20250926-00:00:00",
+        "daily_schedule": [
+          {
+            "idx": 0,
+            "describe": "睡觉",
+            "start": 0,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "睡觉",
+                "start": 0,
+                "duration": 5
+              },
+              {
+                "idx": 1,
+                "describe": "睡觉",
+                "start": 5,
+                "duration": 5
+              },
+              {
+                "idx": 2,
+                "describe": "睡觉",
+                "start": 10,
+                "duration": 5
+              },
+              {
+                "idx": 3,
+                "describe": "睡觉",
+                "start": 15,
+                "duration": 5
+              },
+              {
+                "idx": 4,
+                "describe": "睡觉",
+                "start": 20,
+                "duration": 5
+              },
+              {
+                "idx": 5,
+                "describe": "睡觉",
+                "start": 25,
+                "duration": 5
+              },
+              {
+                "idx": 6,
+                "describe": "睡觉",
+                "start": 30,
+                "duration": 5
+              },
+              {
+                "idx": 7,
+                "describe": "睡觉",
+                "start": 35,
+                "duration": 5
+              },
+              {
+                "idx": 8,
+                "describe": "睡觉",
+                "start": 40,
+                "duration": 5
+              },
+              {
+                "idx": 9,
+                "describe": "睡觉",
+                "start": 45,
+                "duration": 5
+              },
+              {
+                "idx": 10,
+                "describe": "睡觉",
+                "start": 50,
+                "duration": 10
+              }
+            ]
+          },
+          {
+            "idx": 1,
+            "describe": "睡觉",
+            "start": 60,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "睡觉",
+                "start": 60,
+                "duration": 5
+              },
+              {
+                "idx": 1,
+                "describe": "睡觉",
+                "start": 65,
+                "duration": 5
+              },
+              {
+                "idx": 2,
+                "describe": "睡觉",
+                "start": 70,
+                "duration": 5
+              },
+              {
+                "idx": 3,
+                "describe": "睡觉",
+                "start": 75,
+                "duration": 5
+              },
+              {
+                "idx": 4,
+                "describe": "睡觉",
+                "start": 80,
+                "duration": 5
+              },
+              {
+                "idx": 5,
+                "describe": "睡觉",
+                "start": 85,
+                "duration": 5
+              },
+              {
+                "idx": 6,
+                "describe": "睡觉",
+                "start": 90,
+                "duration": 5
+              },
+              {
+                "idx": 7,
+                "describe": "睡觉",
+                "start": 95,
+                "duration": 5
+              },
+              {
+                "idx": 8,
+                "describe": "睡觉",
+                "start": 100,
+                "duration": 5
+              },
+              {
+                "idx": 9,
+                "describe": "睡觉",
+                "start": 105,
+                "duration": 5
+              },
+              {
+                "idx": 10,
+                "describe": "睡觉",
+                "start": 110,
+                "duration": 10
+              }
+            ]
+          },
+          {
+            "idx": 2,
+            "describe": "睡觉",
+            "start": 120,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "睡觉",
+                "start": 120,
+                "duration": 5
+              },
+              {
+                "idx": 1,
+                "describe": "睡觉",
+                "start": 125,
+                "duration": 5
+              },
+              {
+                "idx": 2,
+                "describe": "睡觉",
+                "start": 130,
+                "duration": 5
+              },
+              {
+                "idx": 3,
+                "describe": "睡觉",
+                "start": 135,
+                "duration": 5
+              },
+              {
+                "idx": 4,
+                "describe": "睡觉",
+                "start": 140,
+                "duration": 5
+              },
+              {
+                "idx": 5,
+                "describe": "睡觉",
+                "start": 145,
+                "duration": 5
+              },
+              {
+                "idx": 6,
+                "describe": "睡觉",
+                "start": 150,
+                "duration": 5
+              },
+              {
+                "idx": 7,
+                "describe": "睡觉",
+                "start": 155,
+                "duration": 5
+              },
+              {
+                "idx": 8,
+                "describe": "睡觉",
+                "start": 160,
+                "duration": 5
+              },
+              {
+                "idx": 9,
+                "describe": "睡觉",
+                "start": 165,
+                "duration": 5
+              },
+              {
+                "idx": 10,
+                "describe": "睡觉",
+                "start": 170,
+                "duration": 10
+              }
+            ]
+          },
+          {
+            "idx": 3,
+            "describe": "睡觉",
+            "start": 180,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "睡觉",
+                "start": 180,
+                "duration": 5
+              },
+              {
+                "idx": 1,
+                "describe": "睡觉",
+                "start": 185,
+                "duration": 5
+              },
+              {
+                "idx": 2,
+                "describe": "睡觉",
+                "start": 190,
+                "duration": 5
+              },
+              {
+                "idx": 3,
+                "describe": "睡觉",
+                "start": 195,
+                "duration": 5
+              },
+              {
+                "idx": 4,
+                "describe": "睡觉",
+                "start": 200,
+                "duration": 5
+              },
+              {
+                "idx": 5,
+                "describe": "睡觉",
+                "start": 205,
+                "duration": 5
+              },
+              {
+                "idx": 6,
+                "describe": "睡觉",
+                "start": 210,
+                "duration": 5
+              },
+              {
+                "idx": 7,
+                "describe": "睡觉",
+                "start": 215,
+                "duration": 5
+              },
+              {
+                "idx": 8,
+                "describe": "睡觉",
+                "start": 220,
+                "duration": 5
+              },
+              {
+                "idx": 9,
+                "describe": "睡觉",
+                "start": 225,
+                "duration": 5
+              },
+              {
+                "idx": 10,
+                "describe": "睡觉",
+                "start": 230,
+                "duration": 10
+              }
+            ]
+          },
+          {
+            "idx": 4,
+            "describe": "睡觉",
+            "start": 240,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 5,
+            "describe": "起床",
+            "start": 300,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 6,
+            "describe": "晨跑",
+            "start": 360,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 7,
+            "describe": "吃早餐",
+            "start": 420,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 8,
+            "describe": "学习化学课程",
+            "start": 480,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 9,
+            "describe": "学习化学课程",
+            "start": 540,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 10,
+            "describe": "学习化学课程",
+            "start": 600,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 11,
+            "describe": "学习化学课程",
+            "start": 660,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 12,
+            "describe": "吃午饭",
+            "start": 720,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 13,
+            "describe": "学习化学",
+            "start": 780,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 14,
+            "describe": "学习化学",
+            "start": 840,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 15,
+            "describe": "体育训练",
+            "start": 900,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 16,
+            "describe": "吃晚饭",
+            "start": 960,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 17,
+            "describe": "复习考试内容",
+            "start": 1020,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "开始复习考试内容",
+                "start": 1020,
+                "duration": 15
+              },
+              {
+                "idx": 1,
+                "describe": "整理复习资料",
+                "start": 1035,
+                "duration": 10
+              },
+              {
+                "idx": 2,
+                "describe": "做错题归纳",
+                "start": 1045,
+                "duration": 10
+              },
+              {
+                "idx": 3,
+                "describe": "复习重点公式",
+                "start": 1055,
+                "duration": 10
+              },
+              {
+                "idx": 4,
+                "describe": "复习实验相关内容",
+                "start": 1065,
+                "duration": 10
+              },
+              {
+                "idx": 5,
+                "describe": "暂停复习，休息5分钟",
+                "start": 1075,
+                "duration": 5
+              }
+            ]
+          },
+          {
+            "idx": 18,
+            "describe": "复习考试内容",
+            "start": 1080,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "开始复习考试内容",
+                "start": 1080,
+                "duration": 5
+              },
+              {
+                "idx": 1,
+                "describe": "理解当天的课程重点",
+                "start": 1085,
+                "duration": 5
+              },
+              {
+                "idx": 2,
+                "describe": "整理复习笔记",
+                "start": 1090,
+                "duration": 5
+              },
+              {
+                "idx": 3,
+                "describe": "回顾之前做错的题目",
+                "start": 1095,
+                "duration": 5
+              },
+              {
+                "idx": 4,
+                "describe": "用思维导图梳理知识点",
+                "start": 1100,
+                "duration": 5
+              },
+              {
+                "idx": 5,
+                "describe": "复习重点公式和定理",
+                "start": 1105,
+                "duration": 5
+              },
+              {
+                "idx": 6,
+                "describe": "检查复习进度",
+                "start": 1110,
+                "duration": 5
+              },
+              {
+                "idx": 7,
+                "describe": "记录难点和疑问",
+                "start": 1115,
+                "duration": 5
+              },
+              {
+                "idx": 8,
+                "describe": "预习下一章内容",
+                "start": 1120,
+                "duration": 5
+              },
+              {
+                "idx": 9,
+                "describe": "总结复习内容",
+                "start": 1125,
+                "duration": 5
+              },
+              {
+                "idx": 10,
+                "describe": "复习考试内容",
+                "start": 1130,
+                "duration": 10
+              }
+            ]
+          },
+          {
+            "idx": 19,
+            "describe": "复习考试内容",
+            "start": 1140,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "复习考试内容",
+                "start": 1140,
+                "duration": 15
+              },
+              {
+                "idx": 1,
+                "describe": "整理复习笔记",
+                "start": 1155,
+                "duration": 10
+              },
+              {
+                "idx": 2,
+                "describe": "回顾重点公式",
+                "start": 1165,
+                "duration": 10
+              },
+              {
+                "idx": 3,
+                "describe": "做练习题巩固",
+                "start": 1175,
+                "duration": 15
+              },
+              {
+                "idx": 4,
+                "describe": "检查错题并记录",
+                "start": 1190,
+                "duration": 5
+              },
+              {
+                "idx": 5,
+                "describe": "休息并调整状态",
+                "start": 1195,
+                "duration": 5
+              }
+            ]
+          },
+          {
+            "idx": 20,
+            "describe": "复习考试内容",
+            "start": 1200,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "复习考试内容",
+                "start": 1200,
+                "duration": 15
+              },
+              {
+                "idx": 1,
+                "describe": "整理笔记",
+                "start": 1215,
+                "duration": 10
+              },
+              {
+                "idx": 2,
+                "describe": "做练习题",
+                "start": 1225,
+                "duration": 15
+              },
+              {
+                "idx": 3,
+                "describe": "复习重点公式",
+                "start": 1240,
+                "duration": 10
+              },
+              {
+                "idx": 4,
+                "describe": "暂停复习，休息5分钟",
+                "start": 1250,
+                "duration": 5
+              },
+              {
+                "idx": 5,
+                "describe": "复习错题本",
+                "start": 1255,
+                "duration": 5
+              }
+            ]
+          },
+          {
+            "idx": 21,
+            "describe": "看电视放松",
+            "start": 1260,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "开始复习考试内容",
+                "start": 1260,
+                "duration": 15
+              },
+              {
+                "idx": 1,
+                "describe": "整理复习笔记",
+                "start": 1275,
+                "duration": 10
+              },
+              {
+                "idx": 2,
+                "describe": "看电视放松",
+                "start": 1285,
+                "duration": 20
+              },
+              {
+                "idx": 3,
+                "describe": "选择电视剧或节目",
+                "start": 1305,
+                "duration": 5
+              },
+              {
+                "idx": 4,
+                "describe": "调节电视音量和画面",
+                "start": 1310,
+                "duration": 5
+              },
+              {
+                "idx": 5,
+                "describe": "放松并休息",
+                "start": 1315,
+                "duration": 5
+              }
+            ]
+          },
+          {
+            "idx": 22,
+            "describe": "复习考试内容",
+            "start": 1320,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "开始复习考试内容",
+                "start": 1320,
+                "duration": 15
+              },
+              {
+                "idx": 1,
+                "describe": "复习重点公式和笔记",
+                "start": 1335,
+                "duration": 15
+              },
+              {
+                "idx": 2,
+                "describe": "整理复习资料",
+                "start": 1350,
+                "duration": 15
+              },
+              {
+                "idx": 3,
+                "describe": "回顾错题本",
+                "start": 1365,
+                "duration": 15
+              }
+            ]
+          },
+          {
+            "idx": 23,
+            "describe": "上床睡觉",
+            "start": 1380,
+            "duration": 60,
+            "decompose": [
+              {
+                "idx": 0,
+                "describe": "关闭电脑",
+                "start": 1380,
+                "duration": 5
+              },
+              {
+                "idx": 1,
+                "describe": "洗漱",
+                "start": 1385,
+                "duration": 5
+              },
+              {
+                "idx": 2,
+                "describe": "脱掉运动服",
+                "start": 1390,
+                "duration": 5
+              },
+              {
+                "idx": 3,
+                "describe": "穿上睡衣",
+                "start": 1395,
+                "duration": 5
+              },
+              {
+                "idx": 4,
+                "describe": "睡前阅读",
+                "start": 1400,
+                "duration": 5
+              },
+              {
+                "idx": 5,
+                "describe": "调节房间灯光",
+                "start": 1405,
+                "duration": 5
+              },
+              {
+                "idx": 6,
+                "describe": "检查是否关掉所有电器",
+                "start": 1410,
+                "duration": 5
+              },
+              {
+                "idx": 7,
+                "describe": "躺下准备入睡",
+                "start": 1415,
+                "duration": 5
+              },
+              {
+                "idx": 8,
+                "describe": "深呼吸放松",
+                "start": 1420,
+                "duration": 5
+              },
+              {
+                "idx": 9,
+                "describe": "入睡",
+                "start": 1425,
+                "duration": 5
+              },
+              {
+                "idx": 10,
+                "describe": "上床睡觉",
+                "start": 1430,
+                "duration": 10
+              }
+            ]
+          },
+          {
+            "idx": 24,
+            "describe": "睡觉",
+            "start": 1440,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 25,
+            "describe": "睡觉",
+            "start": 1500,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 26,
+            "describe": "睡觉",
+            "start": 1560,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 27,
+            "describe": "睡觉",
+            "start": 1620,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 28,
+            "describe": "睡觉",
+            "start": 1680,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 29,
+            "describe": "起床",
+            "start": 1740,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 30,
+            "describe": "晨跑",
+            "start": 1800,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 31,
+            "describe": "吃早餐",
+            "start": 1860,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 32,
+            "describe": "学习化学课程",
+            "start": 1920,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 33,
+            "describe": "学习化学课程",
+            "start": 1980,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 34,
+            "describe": "学习化学课程",
+            "start": 2040,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 35,
+            "describe": "学习化学课程",
+            "start": 2100,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 36,
+            "describe": "吃午饭",
+            "start": 2160,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 37,
+            "describe": "休息",
+            "start": 2220,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 38,
+            "describe": "继续学习化学",
+            "start": 2280,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 39,
+            "describe": "参加体育训练",
+            "start": 2340,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 40,
+            "describe": "吃晚饭",
+            "start": 2400,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 41,
+            "describe": "复习功课",
+            "start": 2460,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 42,
+            "describe": "复习功课",
+            "start": 2520,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 43,
+            "describe": "复习功课",
+            "start": 2580,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 44,
+            "describe": "复习功课",
+            "start": 2640,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 45,
+            "describe": "看电视放松",
+            "start": 2700,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 46,
+            "describe": "准备睡觉",
+            "start": 2760,
+            "duration": 60,
+            "decompose": {}
+          },
+          {
+            "idx": 47,
+            "describe": "上床睡觉",
+            "start": 2820,
+            "duration": 60,
+            "decompose": {}
+          }
+        ]
+      },
+      "associate": {
+        "memory": {
+          "event": [
+            "node_59",
+            "node_58",
+            "node_57",
+            "node_56",
+            "node_55",
+            "node_54",
+            "node_53",
+            "node_52",
+            "node_51",
+            "node_50",
+            "node_49",
+            "node_48",
+            "node_47",
+            "node_46",
+            "node_45",
+            "node_44",
+            "node_43",
+            "node_42",
+            "node_41",
+            "node_25",
+            "node_24",
+            "node_23",
+            "node_22",
+            "node_21",
+            "node_20",
+            "node_19",
+            "node_18",
+            "node_17",
+            "node_16",
+            "node_15",
+            "node_14",
+            "node_13",
+            "node_12",
+            "node_11",
+            "node_10",
+            "node_9",
+            "node_8",
+            "node_7",
+            "node_6",
+            "node_5",
+            "node_4",
+            "node_3",
+            "node_2",
+            "node_1"
+          ],
+          "thought": [
+            "node_60",
+            "node_40",
+            "node_39",
+            "node_38",
+            "node_37",
+            "node_36",
+            "node_35",
+            "node_34",
+            "node_33",
+            "node_32",
+            "node_31",
+            "node_30",
+            "node_29",
+            "node_28",
+            "node_27",
+            "node_26",
+            "node_0"
+          ],
+          "chat": []
+        }
+      },
+      "chats": [],
+      "currently": "沃尔夫冈在2025-09-26继续保持规律的作息和高效的学习节奏，内心充满信心，正为即将到来的考试和比赛全力以赴",
+      "action": {
+        "event": {
+          "subject": "沃尔夫冈",
+          "predicate": "正在",
+          "object": "睡觉",
+          "describe": "",
+          "address": [
+            "the Ville",
+            "奥克山学院宿舍",
+            "沃尔夫冈的房间",
+            "床"
+          ],
+          "emoji": "😴"
+        },
+        "obj_event": {
+          "subject": "床",
+          "predicate": "被占用",
+          "object": "沃尔夫冈",
+          "describe": "",
+          "address": [
+            "the Ville",
+            "奥克山学院宿舍",
+            "沃尔夫冈的房间",
+            "床"
+          ],
+          "emoji": "🛌"
+        },
+        "start": "20250926-02:00:00",
+        "duration": 60
+      },
+      "coord": [
+        107,
+        62
+      ]
+    }
+  },
+  "step": 61
+}
