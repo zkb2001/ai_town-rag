@@ -94,6 +94,7 @@ class MeaningSystem:
         else:
             return f"处于深度意义危机中（已发生{crisis_count}次危机），质疑一切的价值"
     
+    #为给大模型的问题
     def get_existential_questions(self, agent_name: str) -> List[str]:
         """获取存在主义问题"""
         level = self.get_meaning_level(agent_name)
